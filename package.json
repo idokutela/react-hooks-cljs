@@ -1,0 +1,14 @@
+{
+  "name": "react-hooks-cljs",
+  "version": "0.0.0",
+  "description": "A simple react-hooks clojurescript wrapper",
+  "main": "index.js",
+  "author": "Alexander Kahle",
+  "license": "MIT",
+  "devDependencies": {
+    "shadow-cljs": "^2.7.30"
+  },
+  "peerDependencies": {
+    "react": "^16.8.1"
+  }
+}
