@@ -50,7 +50,7 @@
   (-pr-writer [a w opts]
     (-write w "#<Atom: ")
     (pr-writer w (-deref a) opts)
-    (-write ">"))
+    (-write w ">"))
 
   IHash
   (-hash [this] (goog/getUid this)))
