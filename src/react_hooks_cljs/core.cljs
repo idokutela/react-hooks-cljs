@@ -1,5 +1,5 @@
 (ns react-hooks-cljs.core
-  (:require "react" :as React))
+  (:require ["react" :as React]))
 
 (def use-state! (.-useState React))
 (def use-effect! (.-useEffect React))
