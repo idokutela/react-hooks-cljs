@@ -1,5 +1,4 @@
-{:source-paths ["src"]
- :builds {:dev {:target :browser
+{:builds {:dev {:target :browser
                 :output-dir "public/js"
                 :asset-path "/js"
                 :modules {:main {:entries [interceptor.core]}}
