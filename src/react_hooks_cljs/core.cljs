@@ -47,7 +47,10 @@
   (-meta [_] meta)
 
   IPrintWithWriter
-  (-pr-writer [a w opts] (pr-atom a w opts "Atom:"))
+  (-pr-writer [a w opts]
+    (-write w "#<Atom: ")
+    (pr-writer w (-deref a) opts)
+    (-write ">"))
 
   IHash
   (-hash [this] (goog/getUid this)))
