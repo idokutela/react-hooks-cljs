@@ -65,6 +65,6 @@
   In practise, this should be no problem: one should only use the
   value of state atoms when rendering, and by then, any updates will
   have occurred."
-  [x & {:keys [meta validator]}
-   (let [[state set-state!] (use-state! x)]
-     (StateAtom. state meta validator set-state!))])
+  [x & {:keys [meta validator]}]
+  (let [[state set-state!] (use-state! x)]
+    (StateAtom. state meta validator set-state!)))
